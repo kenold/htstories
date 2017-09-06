@@ -1,11 +1,27 @@
 @extends('backend.layouts.master')
 
-@section('content')
-    <ul class="list-unstyled">
+@section('content')   
+
+    <table class="table">
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Job Title</th>
+        </tr>
+    </thead>
+    <tbody>
         @foreach($people as $person)
-            <li>{{ $person->name }}</li>
+            <tr>
+            <th scope="row">{{ $person->id }}</th>
+            <td>{{ $person->name }}</td>
+            <td>{{ $person->company }}</td>
+            <td>{{ $person->job_title }}</td>
+            </tr>
         @endforeach
-    </ul>
+    </tbody>
+    </table>
 
     <nav aria-label="Page navigation">
         {{ $people->links() }}
