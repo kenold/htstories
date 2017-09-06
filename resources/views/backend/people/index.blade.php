@@ -1,10 +1,8 @@
 @extends('backend.layouts.master')
 
 @section('content')   
-    <h1>Student Stories</h1>
-      <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
-
-      <h3>People</h3>      
+    
+    <h3>People Listing <small>({{ $people->total() }})</small></h3>      
 
     <table class="table table-hover">
         <thead>
