@@ -13,7 +13,7 @@ class PersonController extends Controller
    */
   public function index()
   {
-	$people = App\Person::all();
+	$people = App\Person::paginate(15);
 	
 	return view('backend.people.index', compact('people'));
   }
