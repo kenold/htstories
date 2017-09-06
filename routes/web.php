@@ -12,3 +12,4 @@
 */
 
 Route::get('/admin', 'DashboardController@index');
+Route::resource('/admin/people', 'PersonController');
