@@ -7,6 +7,7 @@
             <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Sex</th>
             <th>Company</th>
             <th>Job Title</th>
             </tr>
@@ -16,6 +17,7 @@
                 <tr>
                 <th scope="row">{{ $person->id }}</th>
                 <td>{{ $person->name }}</td>
+                <td>{{ $person->sex }}</td>
                 <td>{{ $person->company }}</td>
                 <td>{{ $person->job_title }}</td>
                 </tr>
