@@ -13,9 +13,9 @@ class PersonController extends Controller
    */
   public function index()
   {
-	$people = App\Person::paginate(10);
+	  $people = App\Person::paginate(10);
 	
-	return view('backend.people.index', compact('people'));
+  	return view('backend.people.index', compact('people'));
   }
 
   /**
