@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'PersonController@index');
+Route::get('/', 'DashboardController@index');
