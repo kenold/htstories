@@ -13,7 +13,11 @@ class DashboardController extends Controller
    */
   public function index()
   {
-	return view('backend.dashboard');
+      $people = App\Person::paginate(5);
+      $categories = App\Category::paginate(5);
+      $tags = App\Tag::paginate(5);
+	
+	    return view('backend.dashboard', compact('people', 'categories', 'tags'));
   }
 
   /**
